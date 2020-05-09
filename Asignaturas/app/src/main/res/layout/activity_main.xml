@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/TextAppearance.AppCompat.Body1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4FEFC7"
+    android:theme="@style/AppTheme"
+    android:touchscreenBlocksFocus="false">
+
+    <EditText
+        android:id="@+id/editTextAsignatura"
+        android:layout_width="217dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="name"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="99dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@android:color/black"
+        android:text="Agregar"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/editTextAsignatura"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewMisAsig"
+        android:layout_width="151dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="38dp"
+        android:breakStrategy="high_quality"
+        android:text="Mis asignaturas"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAsignatura" />
+
+    <ListView
+        android:id="@+id/ListView"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMisAsig" />
+</androidx.constraintlayout.widget.ConstraintLayout>
